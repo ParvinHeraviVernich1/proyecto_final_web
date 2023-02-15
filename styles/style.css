@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
-
 * {
     margin: 0;
     Padding: 0;
     box-sizing:border-box;
 }
-
 /*root body nav ul li a:before es el efecto por css en el bootstrap*/
 :root {
     --primary-color: #000;
@@ -20,7 +16,6 @@ body {
     color: var(--primary-color);
     width: 100%;
 }
-
 nav ul li a {
     position: relative;
     margin: 20px;
@@ -28,7 +23,6 @@ nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
 }
-
 nav ul li a:before {
     content: '';
     background: var(--decoration-color);
@@ -40,30 +34,24 @@ nav ul li a:before {
     transition: all 1s;
     /* transition: ; */
 }
-
 nav ul li a:hover::before {
     /* ancho final */
     width: 100%;
 }
-
 /*hasta aquí es el efecto del nav*/
-
-
 .titulares {
     width: 100%;
     /*border: solid red;*/
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
     padding-top: 40px;
     background-color: black;
     color: white;
-    
+    letter-spacing: 1px;
 }
-
 main {
-    
     display: flex;
     justify-content: center;
     background-color: black;
@@ -73,43 +61,31 @@ main {
 
     justify-content: space-between;
     /*border:solid green 2px;*/
-
 }
-
 .container article{
     padding: 10px;
-    overflow: hidden;
-    
-   
+    overflow: hidden;  
 }
-
 .nombre{
 text-align: center;
 padding-top: 12px;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 color: white;
 font-size:18px;
-
 }
 .descripcion{
     text-align: center;
-    padding-top: 8px;
-    font-family: 'Montserrat', sans-serif;
+    
+    font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    font-size:14px;
-    
+    font-size:14px; 
     }
-
-img {
-    
+img { 
     transition:all .3s ease-in-out;
   }
-  
   img:hover {
     filter: grayscale(80%);
   }
-
-
 .box1{
     /*border:solid rgb(226, 43, 134);*/
     width: 40em;   
@@ -135,16 +111,19 @@ img {
         justify-content: unset;
     }  
     .container article{
-        height: 100px; 
+        height: 300px; 
     }  
     .box1{
-        width: 40%;
+        width: 50%;
     }
     .box2{
-        width: 55%;
+        width: 50%;
     }
     .box3{
-        width: 100%;
+        width: 50%;
+    }
+    .box4{
+        width: 50%;
     }
     }
     /* --------- Estilos para tablet hasta 450px------- */
@@ -164,6 +143,9 @@ img {
             width: 100%;
         }
         .box3{
+            width: 100%;
+        }
+        .box4{
             width: 100%;
         }
         }
