@@ -39,7 +39,7 @@ nav ul li a:hover::before {
     width: 100%;
 }
 /*hasta aquí es el efecto del nav*/
-.titulares {
+.titulares-blancos {
     width: 100%;
     /*border: solid red;*/
     display: flex;
@@ -49,6 +49,18 @@ nav ul li a:hover::before {
     padding-top: 40px;
     background-color: black;
     color: white;
+    letter-spacing: 1px;
+}
+.titulares-negros {
+    width: 100%;
+    /*border: solid red;*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-items: center;
+    padding-top: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     letter-spacing: 1px;
 }
 main {
@@ -62,6 +74,12 @@ main {
     justify-content: space-between;
     /*border:solid green 2px;*/
 }
+div .proyectos {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
 .container article{
     padding: 10px;
     overflow: hidden;  
@@ -149,3 +167,5 @@ img {
             width: 100%;
         }
         }
+/*--*/
+
