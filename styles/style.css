@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+* {
+    margin: 0;
+    Padding: 0;
+    box-sizing:border-box;
+}
+
+/*root body nav ul li a:before es el efecto por css en el bootstrap*/
+:root {
+    --primary-color: #000;
+    --secondary-color: #f2f2f2;
+    --decoration-color: #1C81D7;
+}
+body {
+    background: var(--secondary-color);
+    font-family: 'Roboto';
+    color: var(--primary-color);
+    width: 100%;
+}
+
+nav ul li a {
+    position: relative;
+    margin: 20px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+nav ul li a:before {
+    content: '';
+    background: var(--decoration-color);
+    position: absolute;
+    bottom: -1px;
+    /* alto y ancho=0 */
+    width: 0;
+    height: 1px;
+    transition: all 1s;
+    /* transition: ; */
+}
+
+nav ul li a:hover::before {
+    /* ancho final */
+    width: 100%;
+}
+
+/*hasta aquí es el efecto del nav*/
+
+
+.titulares {
+    width: 100%;
+    /*border: solid red;*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    padding-top: 40px;
+    background-color: black;
+    color: white;
+    
+}
+
+main {
+    
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.container {
+    display: flex;
+
+    justify-content: space-between;
+    /*border:solid green 2px;*/
+
+}
+
+.container article{
+    padding: 10px;
+    overflow: hidden;
+    
+   
+}
+
+.nombre{
+text-align: center;
+padding-top: 12px;
+font-family: 'Montserrat', sans-serif;
+color: white;
+font-size:18px;
+
+}
+.descripcion{
+    text-align: center;
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size:14px;
+    
+    }
+
+img {
+    
+    transition:all .3s ease-in-out;
+  }
+  
+  img:hover {
+    filter: grayscale(80%);
+  }
+
+
+.box1{
+    /*border:solid rgb(226, 43, 134);*/
+    width: 40em;   
+}
+.box2{
+    /*border:solid rgb(43, 64, 226);*/
+    width: 40em;   
+}
+.box3{
+    /*border:solid rgb(46, 226, 43);*/
+    width: 40em;   
+}
+.box4{
+    /*border:solid rgb(46, 226, 43);*/
+    width: 40em; 
+}
+/* --------- Estilos para tablet hasta 900px------- */
+    @media (max-width: 900px){
+    main .container {
+       flex-wrap: wrap;
+        padding: 20px;
+        width: 95%;
+        justify-content: unset;
+    }  
+    .container article{
+        height: 100px; 
+    }  
+    .box1{
+        width: 40%;
+    }
+    .box2{
+        width: 55%;
+    }
+    .box3{
+        width: 100%;
+    }
+    }
+    /* --------- Estilos para tablet hasta 450px------- */
+    @media (max-width: 450px){
+        main .container {
+           flex-wrap: wrap;
+           padding: 0px;
+            width: 100%;
+        }  
+        .container article{
+            height: 20vh; 
+        }  
+        .box1{
+            width: 100%;
+        }
+        .box2{
+            width: 100%;
+        }
+        .box3{
+            width: 100%;
+        }
+        }
