@@ -68,9 +68,13 @@ main {
     justify-content: center;
     background-color: black;
 }
+.fondo-blanco {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
 .container {
     display: flex;
-
     justify-content: space-between;
     /*border:solid green 2px;*/
 }
