@@ -102,6 +102,20 @@ font-size:18px;
     color: white;
     font-size:14px; 
     }
+    .nombre{
+        text-align: center;
+        padding-top: 12px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size:18px;
+        }
+        .descripcion{
+            text-align: center;
+            
+            font-family: 'Source Sans Pro', sans-serif;
+            color: rgb(0, 0, 0);
+            font-size:14px; 
+            }
 img { 
     transition:all .3s ease-in-out;
   }
