@@ -214,8 +214,29 @@ img {
 .textos-valoras{
     color: #000;
 }
-a{
-    text-decoration: none;
-    
+
+
+
+.back-to-top:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.back-to-top.in {
+    bottom: 30px;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
+.back-to-top {
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: -55px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    z-index: 99;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
