@@ -74,7 +74,7 @@ main {
     justify-content: space-between;
     /*border:solid green 2px;*/
 }
-div .proyectos {
+.proyectos {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
