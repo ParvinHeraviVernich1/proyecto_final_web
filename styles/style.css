@@ -212,12 +212,12 @@ section{
     .grid {
        flex-wrap: wrap;
        padding: 0px;
-        width: 50%;
+        width: 10%;
     }  
     .item-1{
-        width: 60%;
+        width:10%;
     }
     .item-2{
-        width: 60%;
+        width: 10%;
     }
     }
