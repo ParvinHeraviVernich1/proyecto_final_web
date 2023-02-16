@@ -176,4 +176,8 @@ img {
 .textos-valoras{
     color: #000;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
