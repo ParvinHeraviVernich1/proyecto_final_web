@@ -184,7 +184,7 @@ img {
             width: 100%;
         }  
         .container article{
-             
+            /*--height: 80vh;--*/
         }  
         .box1{
             width: 100%;
@@ -202,6 +202,7 @@ img {
 
         .box5{
             width: 98%;
+            
     
         }
         .box6{
@@ -215,6 +216,6 @@ img {
 }
 a{
     text-decoration: none;
-    color: black;
+    
 }
 
