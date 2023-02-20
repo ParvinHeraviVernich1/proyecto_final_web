@@ -27,7 +27,7 @@ nav ul li a {
 nav ul li a:before {
     content: '';
     background: var(--decoration-color);
-    position: absolute;
+    position: sticky;
     bottom: -1px;
     /* alto y ancho=0 */
     width: 0;
