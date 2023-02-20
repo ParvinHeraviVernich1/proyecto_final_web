@@ -348,7 +348,7 @@ a:hover {
     picture{
         display: flex;
         justify-content: center;
-        padding-left: 20px;
+        margin-left: 20px;
 
     }
 
