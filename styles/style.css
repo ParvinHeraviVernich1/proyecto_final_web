@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     Padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 /*root body nav ul li a:before es el efecto por css en el bootstrap*/
 :root {
@@ -38,7 +39,9 @@ nav ul li a:hover::before {
     /* ancho final */
     width: 100%;
 }
-/*hasta aquí es el efecto del nav*/
+/*--*/
+
+/*--titulares de novedades en blanco con fondo negro--*/
 .titulares-blancos {
     width: 100%;
     /*border: solid red;*/
@@ -51,6 +54,9 @@ nav ul li a:hover::before {
     color: white;
     letter-spacing: 1px;
 }
+/*--*/
+
+/*--titulares de proyectos en negro con fondo blanco--*/
 .titulares-negros {
     width: 100%;
     /*border: solid red;*/
@@ -63,170 +69,233 @@ nav ul li a:hover::before {
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
 }
+/*--*/
+
+/*--textos dentro de titulares, ejemplo el texto de debajo de página en construcción--*/
+.parrafos {
+    width: 100%;
+    /*border: solid red;*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top:40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+/*--*/
+
+/*--fondo negro para apartado de novedades--*/
 main {
     display: flex;
     justify-content: center;
     background-color: black;
 }
+/*--*/
+
+/*--estilo de fondo para el apartado de proyectos--*/
 .fondo-blanco {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
 }
+/*--*/
+
+/*--estilo de las cajas de novedades--*/
 .container {
     display: flex;
     justify-content: space-between;
-    /*border:solid green 2px;*/
+    /*--border:solid green 2px;--*/
 }
+/*--*/
+
+/*--estilo de las cajas de proyectos--*/
 .proyectos {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
 }
+/*--*/
 
-.container article{
+/*--contenedor para apartado de novedades y proyectos--*/
+.container article {
     padding: 10px;
-    overflow: hidden;  
+    overflow: hidden;
 }
-.nombre{
-text-align: center;
-padding-top: 12px;
-font-family: 'Source Sans Pro', sans-serif;
-color: white;
-font-size:18px;
-}
-.descripcion{
+/*--*/
+
+/*--textos de nombre de peliculas de novedades--*/
+.nombre {
     text-align: center;
-    
+    padding-top: 12px;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    font-size:14px; 
-    }
-    .nombre2{
-        text-align: center;
-        padding-top: 12px;
-        font-family: 'Source Sans Pro', sans-serif;
-        color: rgb(0, 0, 0);
-        font-size:18px;
-        }
-        .descripcion2{
-            text-align: center;
-            
-            font-family: 'Source Sans Pro', sans-serif;
-            color: rgb(0, 0, 0);
-            font-size:14px; 
-            }
-img { 
-    transition:all .3s ease-in-out;
-  }
-  img:hover {
+    font-size: 18px;
+}
+/*--*/
+
+/*--textos de descripcion de cada pelicula de novedades--*/
+.descripcion {
+    text-align: center;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+/*--*/
+
+/*--textos de nombre de peliculas de proyectos--*/
+.nombre2 {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+/*--*/
+
+/*--textos de descripcion de cada pelicula de proyectos--*/
+.descripcion2 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+/*--*/
+
+/*--efecto imagenes cuando haces hover y cambie a escala de grises--*/
+img {
+    transition: all .3s ease-in-out;
+}
+img:hover {
     filter: grayscale(80%);
-  }
-.box1{
+}
+/*--*/
+
+/*--cajas para alojar las imagenes tanto de novedades como de proyectos--*/
+
+.box1 {
     /*border:solid rgb(226, 43, 134);*/
-    width: 40em;   
+    width: 40em;
 }
-.box2{
+.box2 {
     /*border:solid rgb(43, 64, 226);*/
-    width: 40em;   
+    width: 40em;
 }
-.box3{
+.box3 {
     /*border:solid rgb(46, 226, 43);*/
-    width: 40em;   
+    width: 40em;
 }
-.box4{
+.box4 {
     /*border:solid rgb(46, 226, 43);*/
-    width: 40em; 
+    width: 40em;
 }
-.box5{
+.box5 {
     /*border:solid rgb(46, 226, 43);*/
-    width: 80em; 
+    width: 80em;
 }
-.box6{
+.box6 {
     /*border:solid rgb(46, 226, 43);*/
-    width: 80em; 
+    width: 80em;
 }
-/* --------- Estilos para tablet hasta 900px------- */
-    @media (max-width: 900px){
+/* --------- Estilos para tablet hasta 900px para novedades y proyectos------- */
+@media (max-width: 900px) {
     main .container {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
         padding: 20px;
         width: 95%;
         justify-content: unset;
-    }  
-    .container article{
-        height: 300px; 
-    }  
-    .box1{
-        width: 50%;
     }
-    .box2{
-        width: 50%;
-    }
-    .box3{
-        width: 50%;
-    }
-    .box4{
-        width: 50%;
-    }
-    .box5{
-        width: 70%;
-    }
-    .box6{
-        width: 70%;
-    }
-    }
-    /* --------- Estilos para tablet hasta 450px------- */
-    @media (max-width: 450px){
-        main .container {
-           flex-wrap: wrap;
-           padding: 0px;
-            width: 100%;
-        }  
-        .container article{
-            /*--height: 80vh;--*/
-        }  
-        .box1{
-            width: 100%;
-        }
-        .box2{
-            width: 100%;
-        }
-        .box3{
-            width: 100%;
-        }
-        .box4{
-            width: 100%;
-            
-        }
 
-        .box5{
-            width: 98%;
-            
-    
-        }
-        .box6{
-            width: 98%;
-        }
-        }
+    .container article {
+        height: 300px;
+    }
+
+    .box1 {
+        width: 50%;
+    }
+
+    .box2 {
+        width: 50%;
+    }
+
+    .box3 {
+        width: 50%;
+    }
+
+    .box4 {
+        width: 50%;
+    }
+
+    .box5 {
+        width: 70%;
+    }
+
+    .box6 {
+        width: 70%;
+    }
+}
+/* --------- Estilos para tablet hasta 450px para novedades y proyectos------- */
+@media (max-width: 450px) {
+    main .container {
+        flex-wrap: wrap;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .container article {
+        /*--height: 80vh;--*/
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    .box2 {
+        width: 100%;
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
+    .box4 {
+        width: 100%;
+
+    }
+
+    .box5 {
+        width: 98%;
+
+
+    }
+
+    .box6 {
+        width: 98%;
+    }
+}
 /*--*/
 
-.textos-valoras{
+/*-- textos negros del apartado de peliculas más valoradas--*/
+.textos-valoras {
     color: #000;
 }
+/*--*/
 
-
-
+/*--estilo para la flecha de subir arriba en esquina derecha__*/
 .back-to-top:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 .back-to-top.in {
     bottom: 30px;
 }
-a:active, a:hover {
+a:active,
+a:hover {
     outline: 0;
 }
-
 .back-to-top {
     display: block;
     position: fixed;
@@ -239,4 +308,21 @@ a:active, a:hover {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+/*--*/
 
+/*--footer--*/
+
+.ul-vertical{
+        list-style: none;
+        margin: 0;
+        padding: 8px;
+        
+    }
+    .ul-vertical li {
+        
+        width: 150px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        
+    }
