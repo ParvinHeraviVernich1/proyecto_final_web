@@ -18,11 +18,12 @@ body {
     width: 100%;
 }
 nav ul li a {
-    position: sticky;
+    position: relative;
     margin: 20px;
     font-size: 15px;
     color: var(--secondary-color);
     text-decoration: none;
+    
 }
 nav ul li a:before {
     content: '';
