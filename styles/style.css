@@ -5,26 +5,29 @@
     Padding: 0;
     box-sizing: border-box;
 }
+
 /*root body nav ul li a:before es el efecto por css en el bootstrap*/
 :root {
     --primary-color: #000;
     --secondary-color: #f2f2f2;
     --decoration-color: #1C81D7;
 }
+
 body {
     background: var(--secondary-color);
     font-family: 'Roboto';
     color: var(--primary-color);
     width: 100%;
 }
+
 nav ul li a {
     position: relative;
     margin: 20px;
     font-size: 15px;
     color: var(--secondary-color);
     text-decoration: none;
-    
 }
+
 nav ul li a:before {
     content: '';
     background: var(--decoration-color);
@@ -36,12 +39,13 @@ nav ul li a:before {
     transition: all 1s;
     /* transition: ; */
 }
+
 nav ul li a:hover::before {
     /* ancho final */
     width: 100%;
 }
-/*--*/
 
+/*--*/
 /*--titulares de novedades en blanco con fondo negro--*/
 .titulares-blancos {
     width: 100%;
@@ -55,8 +59,8 @@ nav ul li a:hover::before {
     color: white;
     letter-spacing: 1px;
 }
-/*--*/
 
+/*--*/
 /*--titulares de proyectos en negro con fondo blanco--*/
 .titulares-negros {
     width: 100%;
@@ -70,8 +74,8 @@ nav ul li a:hover::before {
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
 }
-/*--*/
 
+/*--*/
 /*--textos dentro de titulares, ejemplo el texto de debajo de página en construcción--*/
 .parrafos {
     width: 100%;
@@ -82,7 +86,7 @@ nav ul li a:hover::before {
     font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
     padding-bottom: 80px;
-    padding-top:40px;
+    padding-top: 40px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
@@ -96,38 +100,39 @@ nav ul li a:hover::before {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
-    padding-bottom:80px;
-    padding-top:40px;
-    padding-left:100px;
-    padding-right:100px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
 }
-/*--*/
 
+/*--*/
 /*--fondo negro para apartado de novedades--*/
 main {
     display: flex;
     justify-content: center;
     background-color: black;
 }
-/*--*/
 
+/*--*/
 /*--estilo de fondo para el apartado de proyectos--*/
 .fondo-blanco {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
 }
-/*--*/
 
+/*--*/
 /*--estilo de las cajas de novedades--*/
 .container {
     display: flex;
     justify-content: space-between;
     /*--border:solid green 2px;--*/
 }
+
 /*--*/
 
 /*--estilo de las cajas de proyectos--*/
@@ -136,15 +141,15 @@ main {
     justify-content: center;
     background-color: rgb(255, 255, 255);
 }
-/*--*/
 
+/*--*/
 /*--contenedor para apartado de novedades y proyectos--*/
 .container article {
     padding: 10px;
     overflow: hidden;
 }
-/*--*/
 
+/*--*/
 /*--textos de nombre de peliculas de novedades--*/
 .nombre {
     text-align: center;
@@ -153,8 +158,8 @@ main {
     color: white;
     font-size: 18px;
 }
-/*--*/
 
+/*--*/
 /*--textos de descripcion de cada pelicula de novedades--*/
 .descripcion {
     text-align: center;
@@ -163,8 +168,8 @@ main {
     color: white;
     font-size: 14px;
 }
-/*--*/
 
+/*--*/
 /*--textos de nombre de peliculas de proyectos--*/
 .nombre2 {
     text-align: center;
@@ -173,8 +178,8 @@ main {
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
-/*--*/
 
+/*--*/
 /*--textos de descripcion de cada pelicula de proyectos--*/
 .descripcion2 {
     text-align: center;
@@ -182,43 +187,49 @@ main {
     color: rgb(0, 0, 0);
     font-size: 14px;
 }
-/*--*/
 
+/*--*/
 /*--efecto imagenes cuando haces hover y cambie a escala de grises--*/
 img {
     transition: all .3s ease-in-out;
 }
+
 img:hover {
     filter: grayscale(80%);
 }
+
 /*--*/
-
 /*--cajas para alojar las imagenes tanto de novedades como de proyectos--*/
-
 .box1 {
     /*border:solid rgb(226, 43, 134);*/
     width: 40em;
 }
+
 .box2 {
     /*border:solid rgb(43, 64, 226);*/
     width: 40em;
 }
+
 .box3 {
     /*border:solid rgb(46, 226, 43);*/
     width: 40em;
 }
+
 .box4 {
     /*border:solid rgb(46, 226, 43);*/
     width: 40em;
 }
+
 .box5 {
     /*border:solid rgb(46, 226, 43);*/
     width: 80em;
 }
+
 .box6 {
     /*border:solid rgb(46, 226, 43);*/
     width: 80em;
 }
+
 /* --------- Estilos para tablet hasta 900px para novedades y proyectos------- */
 @media (max-width: 900px) {
     main .container {
@@ -256,6 +267,7 @@ img:hover {
         width: 70%;
     }
 }
+
 /* --------- Estilos para tablet hasta 450px para novedades y proyectos------- */
 @media (max-width: 450px) {
     main .container {
@@ -287,33 +299,34 @@ img:hover {
 
     .box5 {
         width: 98%;
-
-
     }
 
     .box6 {
         width: 98%;
     }
 }
-/*--*/
 
+/*--*/
 /*-- textos negros del apartado de peliculas más valoradas--*/
 .textos-valoras {
     color: #000;
 }
-/*--*/
 
+/*--*/
 /*--estilo para la flecha de subir arriba en esquina derecha__*/
 .back-to-top:hover {
     background: rgba(0, 0, 0, 0.5);
 }
+
 .back-to-top.in {
     bottom: 30px;
 }
+
 a:active,
 a:hover {
     outline: 0;
 }
+
 .back-to-top {
     display: block;
     position: fixed;
@@ -326,25 +339,38 @@ a:hover {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 /*--*/
-
 /*--footer--*/
+.ul-vertical {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+}
 
-.ul-vertical{
-        list-style: none;
-        margin: 0;
-        padding: 8px;
-        
-    }
-    .ul-vertical li {
-        
-        width: 150px;
-        height: 30px;
-        margin: 0;
-        padding: 0;
-        
-    }
+.ul-vertical li {
+    width: 150px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
 
+.cifras {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
+/*--efecto estrellas para mis favoritos--*/
 
-
+.valoracion button {
+    background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+    transition: 1s all;
+}
+.valoracion button:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}

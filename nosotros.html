@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,6 +36,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
 </head>
+
 <body>
     <!--menu y slide de carrusel con bootstrap-->
     <header>
@@ -44,60 +46,66 @@
             <div class="container-fluid">
                 <a class="navbar-brand" style="color:white;" href="index.html"><img src="img/logo_cabecera.png"
                         height="60px"></a>
-                <button class="navbar-toggler" style="color:white" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"
+                <button class="navbar-toggler" style="color:white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"
                         style="background-color: white"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!--quiero que este a la derecha junto a la busqueda
+                <div class="collapse navbar-collapse z-1" id="navbarSupportedContent"
+                    style="background-color: rgb(0, 0, 0)">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!--quiero que este a la derecha junto a la busqueda
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
-                    <ul class="navbar-nav ms-auto" style="margin-right: 20px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" style="color:white" aria-current="page" href="nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color:white" href="favoritos.html">FAVORITOS</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color:white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                GENERO
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a style="color:black"
-                                        href="peliculas.html"><!--ponemos el efecto por css class="dropdown-item"-->
-                                        PELÍCULAS</a></li>
-                                <li><a style="color:black" href="series.html">SERIES</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-tertiary" type="submit" style="color:white; border: 0;"><a
-                                href="construccion.html" style="text-decoration:none; color:#1C81D7">BUSCAR</a></button>
-                    </form>
+                        <ul class="navbar-nav ms-auto" style="margin-right: 20px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" style="color:white" aria-current="page"
+                                    href="nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:white" href="favoritos.html">FAVORITOS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" style="color:white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    GENERO
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a style="color:black"
+                                            href="peliculas.html"><!--ponemos el efecto por css class="dropdown-item"-->
+                                            PELÍCULAS</a></li>
+                                    <li><a style="color:black" href="series.html">SERIES</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-tertiary" type="submit" style="color:white; border: 0;"><a
+                                    href="construccion.html"
+                                    style="text-decoration:none; color:#1C81D7">BUSCAR</a></button>
+                        </form>
+                    </div>
                 </div>
-            </div>
         </nav>
         <!--carrusel bootstrap-->
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/cabecera_cosntruccion.jpg" class="d-block w-100" alt="...">
+                    <img src="img/cabecera_nosotros.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>CREANDO PARA ENTRETENER</h2>
                         <p>NUESTRA ILUSIÓN ES QUE TU TE LO PASES BIEN</p>
                     </div>
                 </div>
-                </div>   
-         </div>
+            </div>
+        </div>
     </header>
     <!--migas de pan-->
-    <nav aria-label="breadcrumb" style="background-color:black; display: flex; justify-content:center ;line-height: 40px">
+    <nav aria-label="breadcrumb"
+        style="background-color:black; display: flex; justify-content:center ;line-height: 40px">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#" style="text-decoration:none; color:#ffffff">Home</a></li>
-            <li class="breadcrumb-item"><a href="#" style="text-decoration:none; color:#ffffff"><i class="fa-solid fa-angle-right"></i></a></li>
+            <li class="breadcrumb-item"><a href="#" style="text-decoration:none; color:#ffffff"><i
+                        class="fa-solid fa-angle-right"></i></a></li>
             <li class="breadcrumb-item active" aria-current="page" style="text-decoration:none; color:#1C81D7">Nosotros
             </li>
         </ol>
@@ -109,68 +117,57 @@
     </article>
     <article class="parrafos-nosotros">
         <p>Miramax es un beIN Media Group y un estudio de cine y televisión de Paramount Company.
-        Conocido por su galardonada colección de películas heredadas, Miramax es un estudio de entretenimiento pionero impulsado por su cultura empresarial y su compromiso intrépido y ambicioso con la innovación y la colaboración modernas, una empresa sinónimo de contenido premium, atractivo y relevante para las diversas audiencias a las que sirve a nivel mundial.
-        Una empresa conjunta entre beIN Media Group y Paramount Company , Miramax está dirigida por el CEO Bill Block. Adquirida por beIN Media Group en 2016, la compañía se asoció con Paramount en 2020 para crear nuevas oportunidades de cofinanciamiento y producción nacional e internacional, redefiniendo cómo los estudios producen, financian y distribuyen productos de entretenimiento en todo el mundo.
-        Miramax es actualmente uno de los estudios de cine y televisión independientes más activos y sólidos, y a medida que aumenta la demanda de contenido premium de cine y televisión a nivel mundial, Miramax se encuentra en una posición única para capitalizar. </p>
+            Conocido por su galardonada colección de películas heredadas, Miramax es un estudio de entretenimiento
+            pionero impulsado por su cultura empresarial y su compromiso intrépido y ambicioso con la innovación y la
+            colaboración modernas, una empresa sinónimo de contenido premium, atractivo y relevante para las diversas
+            audiencias a las que sirve a nivel mundial.
+            Una empresa conjunta entre beIN Media Group y Paramount Company , Miramax está dirigida por el CEO Bill
+            Block. Adquirida por beIN Media Group en 2016, la compañía se asoció con Paramount en 2020 para crear nuevas
+            oportunidades de cofinanciamiento y producción nacional e internacional, redefiniendo cómo los estudios
+            producen, financian y distribuyen productos de entretenimiento en todo el mundo.
+            Miramax es actualmente uno de los estudios de cine y televisión independientes más activos y sólidos, y a
+            medida que aumenta la demanda de contenido premium de cine y televisión a nivel mundial, Miramax se
+            encuentra en una posición única para capitalizar. </p>
     </article>
-
-
-
-
-     <!--empieza equipo fotos-->
-
-    <picture>
-
-                <img src="img/cifras.png" style="width:10%;">
-
-
-                <img src="img/premios.png" style="width:12%;">
-
-
-                <img src="img/series.png" style="width:20%;">
-
-                <img src="img/documentales.png" style="width:10%;">
+    <!--empieza equipo fotos-->
+    <picture class="cifras">
+        <img src="img/cifas.png" style="width:80%; padding:20px">
     </picture>
     <!--termina equipo fotos-->
-
-
-
-
-
     <!--termina contendio sobre nosotros-->
-        <!--empieza equipo fotos-->
-        <article class="titulares-negros">
-            <h2><strong>NUESTRO EQUIPO</strong></h2>
-        </article>
-        <main class="fondo-blanco">
-            <section class="container">
-                <article class="box1">
-                    <img src="img/equipo_1.jpg" width="100%">
-                    <p class="nombre2"><strong>CEO y CEO MRM España</strong></p>
-                    <p class="descripcion2">Marina Spechts</p>
-                </article>
-                <article class="box2">
-                    <img src="img/equipo_2.jpg" width="100%">
-                    <p class="nombre2"><strong>CHIEF CREATIVE OFFICER</strong></p>
-                    <p class="descripcion2">Emiliano G. De Pietri</p>
-                </article>
-                <article class="box3">
-                    <img src="img/equipo_3.jpg" width="100%">
-                    <p class="nombre2"><strong>CEO EN BARCELONA</strong></p>
-                    <p class="descripcion2">Enric Jové</p>
-                </article>
-                <article class="box4">
-                    <img src="img/equipo_4.jpg" width="100%">
-                    <p class="nombre2"><strong>DIRECTORA GENERAL</strong></p>
-                    <p class="descripcion2">Vicky Nieto</p>
-                </article>
-            </section>
-        </main>
-        <!--termina equipo fotos-->
-        </main>
+    <!--empieza equipo fotos-->
+    <article class="titulares-negros">
+        <h2><strong>NUESTRO EQUIPO</strong></h2>
+    </article>
+    <main class="fondo-blanco">
+        <section class="container">
+            <article class="box1">
+                <img src="img/equipo_1.jpg" width="100%">
+                <p class="nombre2"><strong>CEO y CEO MRM España</strong></p>
+                <p class="descripcion2">Marina Spechts</p>
+            </article>
+            <article class="box2">
+                <img src="img/equipo_2.jpg" width="100%">
+                <p class="nombre2"><strong>CHIEF CREATIVE OFFICER</strong></p>
+                <p class="descripcion2">Emiliano G. De Pietri</p>
+            </article>
+            <article class="box3">
+                <img src="img/equipo_3.jpg" width="100%">
+                <p class="nombre2"><strong>CEO EN BARCELONA</strong></p>
+                <p class="descripcion2">Enric Jové</p>
+            </article>
+            <article class="box4">
+                <img src="img/equipo_4.jpg" width="100%">
+                <p class="nombre2"><strong>DIRECTORA GENERAL</strong></p>
+                <p class="descripcion2">Vicky Nieto</p>
+            </article>
+        </section>
+    </main>
+    <!--termina equipo fotos-->
+    </main>
     <!--icono para volver arriba-->
     <div>
-        <a class="back-to-top in" href="index.html">
+        <a class="back-to-top in" href="nosotros.html">
             <i class="fa fa-angle-up"></i>
         </a>
     </div>
@@ -178,14 +175,14 @@
     <!-- Footer -->
     <footer class="row d-flex justify-content-around align-items-start p-5 text-white text-center bg-black">
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-center">
-            <img src="img/logo_cabecera.png" height="60px">
+            <a href="index.html"><img src="img/logo_cabecera.png" height="60px"></a>
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-center">
             <h6 class="mb-4">CONTÁCTANOS</h6>
             <p>Marqués de Valdeiglesias 5 - 1º 28004 Madrid<br>
                 +34 915 238 345
-                <br>nep@nadieesperfecto.com
+                <br>info@miramax.com
             </p>
             <ul class="list-inline d-flex justify-content-center">
                 <li style="margin-right: 15px;"><i class="fa-brands fa-facebook"></i></li>
@@ -202,24 +199,20 @@
             <ul class="ul-vertical">
                 <li style="margin-right: 15px;"><a href="index.html" style="text-decoration:none; color:white">Home</a>
                 </li>
-
                 <li style="margin-right: 15px;"><a href="nosotros.html"
                         style="text-decoration:none; color:white">Nosotros</a></li>
-
                 <li style="margin-right: 15px;"><a href="favoritos.html"
                         style="text-decoration:none; color:white">Favoritos</a></li>
-
-                <li style="margin-right: 15px;"><a href="genero.html"
-                        style="text-decoration:none; color:white">Género</a></li>
             </ul>
         </div>
     </footer>
     <div class="row bg-black text-white">
-        <p class="col text-center p-3">copyright @ Mi sitio 2023</p>
+        <p class="col text-center p-3">copyright @ Mi sitio 2023 PARVIN HERAVI VERNICH</p>
     </div>
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
