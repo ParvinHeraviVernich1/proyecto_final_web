@@ -34,7 +34,7 @@
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
+    <link rel="icon" type="image/jpg" href="prototipado/favicon.png" />
 </head>
 
 <body>
@@ -42,9 +42,9 @@
     <header>
         <!--menú con logotipo y buscador del top realizado con bootstrap-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary"
-            style="background-color:#000000 !important; height: 84px;">
+            style="background-color:#000 !important; height: 84px;">
             <div class="container-fluid">
-                <a class="navbar-brand" style="color:white;" href="index.html"><img src="img/logo_cabecera.png"
+                <a class="navbar-brand" style="color:white;" href="index.html"><img src="img/logotipo-phvcrea.png"
                         height="60px"></a>
                 <button class="navbar-toggler" style="color:white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -52,72 +52,90 @@
                         style="background-color: white"></span>
                 </button>
                 <div class="collapse navbar-collapse z-1" id="navbarSupportedContent"
-                    style="background-color: rgb(0, 0, 0)">
+                    style="background-color: #000">
                     <!--quiero que este a la derecha junto a la busqueda
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
                     <ul class="navbar-nav ms-auto" style="margin-right: 20px;">
                         <li class="nav-item">
                             <a class="nav-link active" style="color:white" aria-current="page"
-                                href="nosotros.html">NOSOTROS</a>
+                            href="prototipado/cv-parvin.pdf" download="Curriculim_Parvin">MI CV</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color:white" href="favoritos.html">FAVORITOS</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color:white" href="#" role="button"
+                            <a class="nav-link dropdown-toggle" style="color:white" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                GENERO
+                                OTROS TRABAJOS
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a style="color:black"
-                                        href="peliculas.html"><!--ponemos el efecto por css class="dropdown-item"-->
-                                        PELÍCULAS</a></li>
-                                <li><a style="color:black" href="series.html">SERIES</a></li>
+                                <li><a style="color:black" href="construccion.html"><!--ponemos el efecto por css class="dropdown-item"-->
+                                        ADHESIVOS</a></li>
+                                <li><a style="color:black" href="construccion.html">CATÁLOGOS</a></li>
                             </ul>
                         </li>
+
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:white"><i class="fa-sharp fa-solid fa-phone"></i> 627 261 936</a>
+                        </li>
+
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-tertiary" type="submit" style="color:white; border: 0;"><a
-                                href="construccion.html" style="text-decoration:none; color:#1C81D7">BUSCAR</a></button>
-                    </form>
-                </div>
+
             </div>
         </nav>
         <!--carrusel bootstrap-->
         <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/cabecera_cosntruccion.jpg" class="d-block w-100" alt="...">
+                    <img src="prototipado/slide-construccion.gif" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>EN CONSTRUCCIÓN</h2>
-                        <p>EN BREVE ESTARÁ TODO LISTO</p>
+                        <h2>Página en construcción</h2>
+                        <p> En breve estará todo listo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mis-trabajos-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Diseño Gráfico, Ilustración, Edición de Video, Marketing y Comunicación</h2>
+                        <p>Me gusta abarcar retos de principio a fin</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="prototipado/mis-trabajos-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Diseñadora web | Prototipado</h2>
+                        <p>Tengo conocimientos de CSS y html5. Actualmente estoy realizando un curso profesional de JavaScript  </p>
                     </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </header>
-    <!--migas de pan-->
-    <nav aria-label="breadcrumb"
-        style="background-color:black; display: flex; justify-content:center ;line-height: 40px">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#" style="text-decoration:none; color:#ffffff">Home</a></li>
-            <li class="breadcrumb-item"><a href="#" style="text-decoration:none; color:#ffffff"><i
-                        class="fa-solid fa-angle-right"></i></a></li>
-            <li class="breadcrumb-item active" aria-current="page" style="text-decoration:none; color:#1C81D7">
-                Construcción
-            </li>
-        </ol>
-    </nav>
-    <!--terminan migas de pan-->
     <!--empieza contenido de página en construcción-->
     <article class="titulares-negros">
-        <h2><strong>PÁGINA EN CONSTRUCCIÓN</strong></h2>
+        <h2><strong>Página en construcción</strong></h2>
     </article>
     <article class="parrafos">
-        <p>Estamos mejorando nuestro sitio para dar un mejor servicio, en breve podrás disfrutar de nuestras últimas
+        <p>Estoy mejorando mi sitio para actualizar los trabajos, en breve podrás disfrutar de mis últimas
             novedades,
-            <br>¡ESPERAMOS SORPRENDERTE PRÓXIMAMENTE!
+            <br>¡ESPERO SORPRENDERTE PRÓXIMAMENTE!
         </p>
     </article>
     </main>
@@ -132,32 +150,25 @@
     <!-- Footer -->
     <footer class="row d-flex justify-content-around align-items-start p-5 text-white text-center bg-black">
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-center">
-            <a href="index.html"><img src="img/logo_cabecera.png" height="60px"></a>
+            <a href="construccion.html"><img src="prototipado/logotipo-phvcrea.png" height="60px"></a>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-center">
-            <h6 class="mb-4">CONTÁCTANOS</h6>
-            <p>Marqués de Valdeiglesias 5 - 1º 28004 Madrid<br>
-                +34 915 238 345
-                <br>info@miramax.com
+            <h6 class="mb-4">CONTACTO</h6>
+            
+                 627 261 936
+                <br>phvcrea@gmail.com
             </p>
             <ul class="list-inline d-flex justify-content-center">
                 <li style="margin-right: 15px;"><i class="fa-brands fa-facebook"></i></li>
+
                 <li style="margin-right: 15px;"><i class="fa-brands fa-square-instagram"></i></li>
+
                 <li style="margin-right: 15px;"><i class="fa-brands fa-linkedin"></i></li>
+
                 <li style="margin-right: 15px;"><i class="fa-brands fa-github"></i></li>
             </ul>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-center">
-            <h6 class="mb-4">SOBRE NOSOTROS</h6>
-            <ul class="ul-vertical">
-                <li style="margin-right: 15px;"><a href="index.html" style="text-decoration:none; color:white">Home</a>
-                </li>
-                <li style="margin-right: 15px;"><a href="nosotros.html"
-                        style="text-decoration:none; color:white">Nosotros</a></li>
-                <li style="margin-right: 15px;"><a href="favoritos.html"
-                        style="text-decoration:none; color:white">Favoritos</a></li>
-            </ul>
-        </div>
+      
     </footer>
     <div class="row bg-black text-white">
         <p class="col text-center p-3">copyright @ Mi sitio 2023 PARVIN HERAVI VERNICH</p>
