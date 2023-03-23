@@ -243,6 +243,10 @@ img:hover {
         height: 255px;
     }
 
+    .container2 article {
+        height: 300px;
+    }
+
     .box1 {
         width: 50%;
     }
