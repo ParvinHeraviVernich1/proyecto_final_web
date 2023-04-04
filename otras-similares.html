@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!--fontawesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7eee8f977d.js" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="styles/style.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
+</head>
+
+<body>
+    <!--menu y slide de carrusel con bootstrap-->
+    <header>
+        <!--menú con logotipo y buscador del top realizado con bootstrap-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"
+            style="background-color:#000000 !important; height: 84px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color:white;" href="index.html"><img src="img/logo_cabecera.png"
+                        height="60px"></a>
+                <button class="navbar-toggler" style="color:white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"
+                        style="background-color: white"></span>
+                </button>
+                <div class="collapse navbar-collapse z-1" id="navbarSupportedContent"
+                    style="background-color: rgb(0, 0, 0)">
+                    <!--quiero que este a la derecha junto a la busqueda
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+                    <ul class="navbar-nav ms-auto" style="margin-right: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color:white" aria-current="page"
+                                href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:white" href="favoritos.html">OTRAS SIMILARES</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                       
+                        <button class="btn btn-tertiary" type="submit" style="color:white; border: 0;"><a
+                                href="search.html" style="text-decoration:none; color:#1C81D7">BUSCAR</a></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--carrusel bootstrap-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/cabecera_slide_1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>THE COVER</h2>
+                        <p>DESCUBRE TODAS LAS NOVEDADES</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cabecera_slide_2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>EL JUEGO DE LAS LLAVES</h2>
+                        <p>NUESTROS DESTACADOS</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cabecera_slide_3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>ORIGENES SECRETOS</h2>
+                        <p>ÚLTIMOS PROYECTOS</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!--migas de pan-->
+    <nav aria-label="breadcrumb"
+        style="background-color:black; display: flex; justify-content:center; line-height: 40px">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" style="text-decoration:none; color:#1C81D7">Home</a></li>
+        </ol>
+    </nav>
+    <!--terminan migas de pan-->
+    <!--empieza favoritos-->
+    <article class="titulares-blancos">
+        <h2><strong>OTRAS SIMILARES</strong></h2>
+    </article>
+    <main>
+        <section class="container">
+
+             <!--empieza novedades
+            <article class="box1">
+                <a href="detalles.html#perfectosdesconocidos"><img src="img/perfectos_desconocidos.jpg" width="100%"></a>
+                <p class="nombre"><strong>PERFECTOS DESCONOCIDOS</strong></p>
+                <p class="descripcion">FECHA DE LANZAMIENTO: 2020<br> TIEMPO: 90 minutos<br>
+                    DIRECTOR: Bill Block</p>
+            </article>
+            <article class="box2">
+                <a href="detalles.html#cover"><img src="img/cover.jpg" width="100%"></a>
+                <p class="nombre"><strong>THE COVER</strong></p>
+                <p class="descripcion">FECHA DE LANZAMIENTO: 2022<br> TIEMPO: 80 minutos<br>
+                    DIRECTOR: Guy Ritchie</p>
+            </article>
+            <article class="box3">
+                <a href="detalles.html#lainfluencia"><img src="img/la-influencia.jpg" width="100%"></a>
+                <p class="nombre"><strong>LA INFLUENCIA</strong></p>
+                <p class="descripcion">FECHA DE LANZAMIENTO: 2019<br> TIEMPO: 78 minutos<br>
+                    DIRECTOR: Ivan Atkinson</p>
+            </article>
+            <article class="box4">
+                <a href="detalles.html#origenessecretos"><img src="img/origenes.jpg" width="100%"></a>
+                <p class="nombre"><strong>ORIGENES SECRETOS</strong></p>
+                <p class="descripcion">FECHA DE LANZAMIENTO: 2023<br> TIEMPO: 96 minutos<br>
+                    DIRECTOR: Michelle Dockery</p>
+            </article>
+            -->
+        </section>
+    </main>
+    
+    <!--termina novedades-->
+    
+    <!--icono para volver arriba-->
+    <div>
+        <a class="back-to-top in" href="index.html">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+    <!--termina icono para volver arriba-->
+    <!-- Footer -->
+    <footer class="row d-flex justify-content-around align-items-start p-5 text-white text-center bg-black">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-center">
+            <a href="index.html"><img src="img/logo_cabecera.png" height="60px"></a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column align-items-center">
+            <h6 class="mb-4">CONTÁCTANOS</h6>
+            <p>Marqués de Valdeiglesias 5 - 1º 28004 Madrid<br>
+                +34 915 238 345
+                <br>info@miramax.com
+            </p>
+            <ul class="list-inline d-flex justify-content-center">
+                <li style="margin-right: 15px;"><i class="fa-brands fa-facebook"></i></li>
+
+                <li style="margin-right: 15px;"><i class="fa-brands fa-square-instagram"></i></li>
+
+                <li style="margin-right: 15px;"><i class="fa-brands fa-linkedin"></i></li>
+
+                <li style="margin-right: 15px;"><i class="fa-brands fa-github"></i></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="row bg-black text-white">
+        <p class="col text-center p-3">copyright @ Mi sitio 2023 PARVIN HERAVI VERNICH</p>
+    </div>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+        <script src="js/otras-similares.js"></script>
+</body>
+
+</html>

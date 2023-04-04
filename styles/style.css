@@ -129,6 +129,7 @@ main {
 /*--estilo de las cajas de novedades--*/
 .container {
     display: flex;
+    
     justify-content: space-between;
     /*--border:solid green 2px;--*/
 }
@@ -146,6 +147,7 @@ main {
 /*--contenedor para apartado de novedades y proyectos--*/
 .container article {
     padding: 10px;
+
     overflow: hidden;
 }
 
@@ -202,7 +204,7 @@ img:hover {
 /*--cajas para alojar las imagenes tanto de novedades como de proyectos--*/
 .box1 {
     /*border:solid rgb(226, 43, 134);*/
-    width: 40em;
+    width: 80em;
 }
 
 .box2 {
