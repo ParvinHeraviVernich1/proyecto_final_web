@@ -8,7 +8,7 @@
 
 /*root body nav ul li a:before es el efecto por css en el bootstrap*/
 :root {
-    --primary-color: #000;
+    --primary-color: #4b22f4;
     --secondary-color: #f2f2f2;
     --decoration-color: #1C81D7;
 }
@@ -55,9 +55,9 @@ nav ul li a:hover::before {
     font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
     padding-top: 40px;
-    background-color: black;
+    background-color: #4b22f4;
     color: white;
-    letter-spacing: 1px;
+  
 }
 
 /*--*/
@@ -71,8 +71,8 @@ nav ul li a:hover::before {
     align-items: center;
     padding-top: 40px;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
+    color:rgb(0, 0, 0);
+   
 }
 
 /*--*/
@@ -89,7 +89,7 @@ nav ul li a:hover::before {
     padding-top: 40px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    letter-spacing: 1px;
+    
 }
 
 .parrafos-nosotros {
@@ -106,7 +106,7 @@ nav ul li a:hover::before {
     padding-right: 100px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    letter-spacing: 1px;
+    
 }
 
 /*--*/
@@ -114,7 +114,7 @@ nav ul li a:hover::before {
 main {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #4b22f4;
 }
 
 /*--*/
@@ -242,7 +242,15 @@ img:hover {
     }
 
     .container article {
+        height: 255px;
+    }
+
+    .container2 article {
         height: 300px;
+    }
+
+    .container3 article {
+        height: 200px;
     }
 
     .box1 {
